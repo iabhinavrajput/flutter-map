@@ -35,7 +35,7 @@ class _ProfilePageState extends State<ProfilePage> {
               });
             },
           ),
-          CheckboxListTile(
+          CheckboxListTile.adaptive( // i used the adaptive so it will do the checkbox according to the ios or android style
             // tristate: true,
             title: Text('Click me'),
             value: isChecked,
@@ -53,7 +53,7 @@ class _ProfilePageState extends State<ProfilePage> {
               });
             },
           ),
-          SwitchListTile(
+          SwitchListTile.adaptive( // i used the adaptive so it will do the switch according to the ios or android style
             title: Text('Switch me'),
             value: isSwitched,
             onChanged: (bool value) {
